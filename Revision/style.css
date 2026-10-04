@@ -1,0 +1,126 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+#web{
+    width: 1260px;
+    height:2000px;
+    margin: 0px auto;
+}
+
+#header{
+    text-align: center;
+}
+#header input{
+    margin-top: 30px;
+    float: left;
+}
+hr{
+    background-color:dodgerblue;
+    color: dodgerblue;
+    border-width: 0;
+    height: 1px;
+}
+#menu nav{
+    display: flex;
+    padding: 0px;
+}
+#menu nav a{
+    text-decoration: none;
+    color: black;
+    margin: 0px auto;
+    padding-left: 56px;
+    padding-right: 56px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: large;
+    font-weight: bold;
+}
+#content{
+    display: flex;
+}
+#group1{
+    width: 800px;
+    display: block;
+}
+
+#main{
+    width: 800px;
+    height: 275px;
+    display: flex;
+}
+#main img{
+    
+    height: 275px;
+    width: 400px;
+    display: block;
+}
+#main-n{
+    background-color: grey;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 275px;
+    margin: 0px auto;
+    
+    width: 300px;
+    display: block;
+    
+}
+#main-sub{
+    display: flex;
+    width: 800px;
+}
+#sub {
+    height: 275px;
+    margin: 0px auto;
+
+    width: 200px;
+    display: block;
+    border: grey;
+}
+
+#trending{
+    display: flex;
+}
+#trending a{
+    margin: 15px;
+    text-decoration: none;
+    color: blue;
+}
+
+#n2{
+    display: flex;
+    height: 250px;
+    margin-top: 30px;
+}
+#sub2{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#n2 img{
+    width: 180px;
+}
+
+#side{
+    margin-left: 70px;
+    width: 360px;
+    display: block;
+    float: right;
+}
+#newest{
+    width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+}
+#cmt{
+    margin-top: 30px;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+}
+#cmt-ct{
+    padding: 10px;
+}
