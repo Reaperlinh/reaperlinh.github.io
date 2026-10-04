@@ -1,126 +1,176 @@
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: justify;
-}
-
-#web{
-    width: 1260px;
-    height:2000px;
-    margin: 0px auto;
-}
-
-#header{
-    text-align: center;
-}
-#header input{
-    margin-top: 30px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: w;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #73C7C7;
+    color: #F4F8D3;
+    padding: 30px;
+    padding-bottom: 50px;
+    text-align: left;
+  }
+  header img {
+    margin-right: 25px;
     float: left;
-}
-hr{
-    background-color:dodgerblue;
-    color: dodgerblue;
-    border-width: 0;
-    height: 1px;
-}
-#menu nav{
-    display: flex;
-    padding: 0px;
-}
-#menu nav a{
-    text-decoration: none;
-    color: black;
-    margin: 0px auto;
-    padding-left: 56px;
-    padding-right: 56px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    font-size: large;
-    font-weight: bold;
-}
-#content{
-    display: flex;
-}
-#group1{
-    width: 800px;
-    display: block;
-}
-
-#main{
-    width: 800px;
-    height: 275px;
-    display: flex;
-}
-#main img{
+  }
+  header h1 {
     
-    height: 275px;
-    width: 400px;
-    display: block;
-}
-#main-n{
-    background-color: grey;
-    padding-left: 50px;
-    padding-right: 50px;
-    height: 275px;
-    margin: 0px auto;
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  .clubs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .club {
     
-    width: 300px;
-    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px; /* Make the club card height the same as its width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .g_name {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap:20px;
+    padding-bottom:100px;
+  }
+  .name h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #73C7C7;
+  }
+  
+  .club p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .club:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     
-}
-#main-sub{
-    display: flex;
-    width: 800px;
-}
-#sub {
-    height: 275px;
-    margin: 0px auto;
+  }
 
-    width: 200px;
+  
+  .club .info {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+  }
+
+  .club .info p{
+    color: #F7CFD8;
+  }
+  
+  .club:hover .info {
     display: block;
-    border: grey;
-}
-
-#trending{
-    display: flex;
-}
-#trending a{
-    margin: 15px;
-    text-decoration: none;
-    color: blue;
-}
-
-#n2{
-    display: flex;
-    height: 250px;
-    margin-top: 30px;
-}
-#sub2{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-#n2 img{
-    width: 180px;
-}
-
-#side{
-    margin-left: 70px;
-    width: 360px;
-    display: block;
-    float: right;
-}
-#newest{
-    width: 320px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: 1px solid #ebebeb;
-    border-radius: 4px;
-}
-#cmt{
-    margin-top: 30px;
-    border: 1px solid #ebebeb;
-    border-radius: 4px;
-}
-#cmt-ct{
+  }
+  
+  footer {
+    text-align: center;
     padding: 10px;
-}
+    background-color: #73C7C7;
+    color: #F4F8D3;
+    margin-top: 40px;
+  }
+  
+
+  @media (max-width: 1650px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    header p {
+      font-size: 1rem;
+    }
+  
+    .clubs {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      padding: 15px;
+    }
+    
+    .club {
+      padding: 15px;
+    }
+  
+    .club h2 {
+      font-size: 1.6rem;
+    }
+  
+    .club p {
+      font-size: 0.9rem;
+    }
+    .g_name{
+        display: none;
+    }
+  }
+  
+
+  @media (max-width: 870px) {
+    header h1 {
+      font-size: 1.6rem;
+    }
+  
+    header p {
+      font-size: 0.9rem;
+    }
+  
+    .clubs {
+      gap: 10px;
+    }
+  
+    .club {
+      padding: 10px;
+    }
+  
+    .club h2 {
+      font-size: 1.4rem;
+    }
+  
+    .club p {
+      font-size: 0.85rem;
+    }
+    
+    footer {
+      padding: 5px;
+    }
+    .g_name{
+        display: none;
+    }
+  }
+  
